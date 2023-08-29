@@ -8,7 +8,7 @@
  
 # Solution 1:
 # Loop through all multiples of 3 and 5 and add them together, then subtract all 
-# multiples of 15 because they get double counted.*/
+# multiples of 15 because they get double counted.
 
 # Computational complexity: O(n) (where n is the upper limit, ie 1000)
 
