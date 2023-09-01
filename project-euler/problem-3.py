@@ -6,11 +6,11 @@
 # Solution
 # One simple way to find a number n's prime factorization is by checking all 
 # numbers from one to the square root of n. Note that checking for the numbers
-# above the square root is unneccesary subce these numbers will be discovered 
+# above the square root is unneccesary since these numbers will be discovered 
 # as cofactors to numbers below the square root of n.
 #
-# To verify if the factors we discover are prime, we keep a record of each
-# prime number discovered and check it.
+# To verify if the factors we discover are prime, we store each prime number 
+# and check for divisibility.
 #
 # Computational complexity: O(n)
 # Explanation: We run through root(n) factors and verify each against up to
