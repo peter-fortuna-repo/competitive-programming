@@ -7,7 +7,7 @@
 
 # Computational complexity: O(n^2) 
 
-def twoSum_1(nums, target):
+def twoSum(nums, target):
     for i in range(nums.size-1):
         for j in range(i+1, nums.size)
             if nums[i] + nums[j] == target:
@@ -25,7 +25,7 @@ def twoSum_1(nums, target):
 
 # Computational complexity: O(n)
 
-def twoSum_2(nums, target):
+def twoSum(nums, target):
     lookup = {}
     for i in range(nums.size):
         lookup.add(nums[i], i)

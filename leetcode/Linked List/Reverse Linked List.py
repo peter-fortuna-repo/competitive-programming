@@ -15,21 +15,20 @@
 # Computational complexity: O(n) 
 # Space complexity: O(1)
 
-class Solution_2:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if head == None:
-            return
-        current_node = head
-        next_node = head.next
-        head.next = None
+def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    if head == None:
+        return
+    current_node = head
+    next_node = head.next
+    head.next = None
 
-        while next_node != None:
-            current = next_node
-            next_node = current.next
-            current.next = head
-            head = current
+    while next_node != None:
+        current = next_node
+        next_node = current.next
+        current.next = head
+        head = current
 
-        return head
+    return head
 
 
 
@@ -39,13 +38,12 @@ class Solution_2:
 # Computational complexity: O(n)
 # Space complexity: O(1)
 
-class Solution_2:
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        return self.reverseListNext(None, head)
+def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    return self.reverseListNext(None, head)
 
-    def reverseListNext(self, current, target):
-        if target == None:
-            return current
-        next = target.next
-        target.next = current
-        return self.reverseListNext(target, next)
+def reverseListNext(self, current, target):
+    if target == None:
+        return current
+    next = target.next
+    target.next = current
+    return self.reverseListNext(target, next)
