@@ -5,7 +5,8 @@
 # Solution 1: 
 # The simplest approach is to check all possible pairs in a nested loop 
 
-# Computational complexity: O(n^2) 
+# Time complexity: O(n^2) 
+# Space complexity: O(1)
 
 def twoSum(nums, target):
     for i in range(nums.size-1):
@@ -18,12 +19,13 @@ def twoSum(nums, target):
 
 # Solution 2
 # We can bring the runtime down to O(n). When we check nums[i], we know that
-# the other element must equal target - nums[i]. This lets us speed things up 
-# using a hashtable. After a hashtable linking nums[i] to i is built,  we pass 
-# through nums one time, and at each num we check if the needed element is in 
-# our hashtable.
+# the other element must equal target - nums[i]. Hence, we know what other 
+# number needs to be in nums. This lets us speed things up using a hashtable.
+# After a hashtable linking nums[i] to i is built,  we loop through nums one 
+# time, and at each num we check if the needed element is in our hashtable.
 
-# Computational complexity: O(n)
+# Time complexity: O(n)
+# Space complexity: O(n)
 
 def twoSum(nums, target):
     lookup = {}

@@ -7,7 +7,7 @@
 # This problem is relatively straightforward. The main trick is to convert each
 # list of numbers to a set for quick lookup, then check each number.
 
-# Computational complexity: O(n) 
+# Time complexity: O(n) 
 # Space complexityL O(n)
 
 def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:

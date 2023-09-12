@@ -6,7 +6,7 @@
 # leftmost non-zero value. This solution is innefficient, as you needlessly
 # move the same zeros multiple times.
 
-# Computational complexity: O(n^2)
+# Time complexity: O(n^2)
 # Space complexity: O(1)
  
 
@@ -36,7 +36,7 @@ def moveZeroes(self, nums: List[int]) -> None:
 # only move nonzero numbers. At the end, we replace the remaining spaces with 
 # 0s. This allows us to move all zeros in two passes or less.
 
-# Computational complexity: O(n)
+# Time complexity: O(n)
 # Space complexity: O(1)
 
 def moveZeroes(self, nums: List[int]) -> None:

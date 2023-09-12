@@ -19,8 +19,8 @@
 # As this sequence adds the two previous terms, it results in the pattern:
 # odd, odd, even, odd, odd, even, odd, odd, even, etc
 #
-# Computational complexity: O(n) 
-# Storage complecity: O(n)
+# Time complexity: O(n) 
+# Space complecity: O(n)
 
 def solution_1():
     fib = dict()
@@ -46,7 +46,7 @@ def solution_1():
 # We can remove the need for a dictionary by keeping track of the previous term
 # and summing even as we come across them.
 # 
-# Computational complexity: O(n)
+# Time complexity: O(n)
 # Space complexity: O(1)
 
 def solution_2():

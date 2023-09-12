@@ -5,7 +5,8 @@
 # Solution 1: Brute Force
 # Use a sliding window to check all possible averages
 
-# Computational complexity: O(kn) 
+# Time complexity: O(kn) 
+# Space complexity: O(1)
 
 def findMaxAverage(self, nums: List[int], k: int) -> float:
     max_avg = -10000 # Smallest possible input
@@ -20,7 +21,8 @@ def findMaxAverage(self, nums: List[int], k: int) -> float:
 # Use a sliding window and a running sum to avoid repeatedly summing i+1 through 
 # k-1. This way, only two elements are needed to calculate each average.
 
-# Computational complexity: O(n)
+# Time complexity: O(n)
+# Space complexity: O(1)
 
 def findMaxAverage(self, nums: List[int], k: int) -> float:
     total = sum(nums[0:k])

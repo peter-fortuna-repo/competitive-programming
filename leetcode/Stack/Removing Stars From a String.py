@@ -5,11 +5,13 @@
 # Remove the closest non-star character to its left, as well as remove the star itself.
 #
 # Return the string after all stars have been removed.
+#
+# Eg: abcd**e -> abe
 
 # Solution 1:
 # This problem is simple using a stack. Append letters and pop() for each star.
 
-# Computational complexity: O(n) 
+# Time complexity: O(n) 
 # Space complexity: O(n)
 
 def removeStars(self, s: str) -> str:
@@ -26,6 +28,9 @@ def removeStars(self, s: str) -> str:
 # For an added challenge we solve the problem in place. To do so, we first 
 # count the number of stars and remove parts of the string until all stars have
 # been removed.
+
+# Time complexity: O(n)
+# Space complexity: O(1)
 
 def removeStars(self, s: str) -> str:
         num_stars = 0
@@ -46,6 +51,3 @@ def removeStars(self, s: str) -> str:
                 i = j
 
         return s
-
-# Computational complexity: O(n)
-# Space complexity: O(1)

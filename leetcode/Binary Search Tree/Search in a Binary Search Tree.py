@@ -5,7 +5,7 @@
 # Solution: 
 # Simply recurse down the BST.
 
-# Computational complexity: O(log(n))  
+# Time complexity: O(log(n))  
 # Space complexity: O(log(n)) 
 
 def searchBST(self, root: Optional[TreeNode], val: int) -> Optional[TreeNode]:

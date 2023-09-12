@@ -9,6 +9,9 @@
 # steps at a time. Once the second pointer reaches the end, the first will be
 # at the middle.
 
+# Time complexity: O(n)
+# Space complexity: O(1)
+
 
 def deleteMiddle(self, head):
         if head.next == None:

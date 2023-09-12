@@ -12,7 +12,7 @@
 # element. To perform this in place, we use a few variables to store the nodes
 # we're updating.
 
-# Computational complexity: O(n) 
+# Time complexity: O(n) 
 # Space complexity: O(1)
 
 def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:

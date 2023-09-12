@@ -10,7 +10,8 @@
 # Loop through all multiples of 3 and 5 and add them together, then subtract all 
 # multiples of 15 because they get double counted.
 
-# Computational complexity: O(n) (where n is the upper limit, ie 1000)
+# Time complexity: O(n) (where n is the upper limit, ie 1000)
+# Space complexity: O(1)
 
 def solution_1():
         sum = 0
@@ -43,7 +44,8 @@ def solution_1():
 # 
 # This allows us to solve the problem in constant time.
 
-# Computational complexity: O(1)
+# Time complexity: O(1)
+# Space complexity: O(1)
 
 def solution_2():
         def sumMultiples(m, n):

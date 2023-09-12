@@ -6,8 +6,8 @@
 # We loop through all possible products of 3-digit numbers. Our inner loop
 # is constrained to avoid double checking products (ie 100*999 and 999*100).
 #
-# Computational complexity: O(n^2) 
-# Storage complexity: O(1)
+# Time complexity: O(n^2) 
+# Space complexity: O(1)
 
 def solution():
     def is_palindrome(num):

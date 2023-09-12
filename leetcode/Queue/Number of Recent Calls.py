@@ -17,7 +17,7 @@
 # We create a simple object that tracks the most recent times in a queue and
 # removes them as those calls become older than the desired time frame.
 
-# Computational complexity: O(n) 
+# Time complexity: O(n) 
 # Space complexity: O(n)
 
 class RecentCounter:

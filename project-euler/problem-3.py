@@ -12,10 +12,10 @@
 # To verify if the factors we discover are prime, we store each prime number 
 # and check for divisibility.
 #
-# Computational complexity: O(n)
+# Time complexity: O(n)
 # Explanation: We run through root(n) factors and verify each against up to
 #              root(n) possible prime divisors. 
-# Storage complexity: O(square root of n)
+# Space complexity: O(square root of n)
 
 import math
 def solution():

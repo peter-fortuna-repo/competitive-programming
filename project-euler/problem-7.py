@@ -7,8 +7,8 @@
 # 10,000th, and check each integer for divisibility by this set of prime 
 # numbers.
 #
-# Computational complexity: O(n^2)
-# Storage complexity: O(n)
+# Time complexity: O(n^2)
+# Space complexity: O(n)
 
 def solution(n=10001):
     primes = [2]

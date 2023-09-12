@@ -7,8 +7,8 @@
 # This solution is straightforward. It uses few operations and is made more 
 # efficient by using list comprehension.
 #
-# Computational complexity: O(n)
-# Storage complexity: O(n)
+# Time complexity: O(n)
+# Space complexity: O(n)
 
 def solution(n=100):
     return sum([i for i in range(1,n+1)])**2 - sum([i**2 for i in range(1,n+1)])

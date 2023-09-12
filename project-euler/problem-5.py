@@ -13,8 +13,8 @@
 # To find the necessary primes and powers of primes, we go from 1 o n,
 # tracking all primes and checking for divisibility.
 #
-# Computational complexity: O(n^2) 
-# Storage complexity: O(n)
+# Time complexity: O(n^2) 
+# Space complexity: O(n)
 
 def solution():
     n = 20
