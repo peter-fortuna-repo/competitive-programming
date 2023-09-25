@@ -5,24 +5,47 @@
 
 # Given n, return the value of Tn.
 
-# Solution 1: 
-# The classic dynamic programming problem with a slight twist. It could use a
-# bit less memory if I kept variables for Tn-1, Tn-2, and Tn-3 instead of 
-# keeping all previous numbers.
+# Solution 1: Top down
+# The classic dynamic programming problem with a slight twist. Here's the top
+# down solution (aka memoized). It's quick, but uses a bit extra memory.
 
 # Time complexity: O(n) 
 # Space complexity: O(n)
 
-def tribonacci(self, n: int) -> int:
-        if n==0:
-            return 0
-        if n==1 or n==2:
-            return 1
-        sequence = [0,1,1]
-        return self.tribonacciHelper(n, sequence)
-    
-def tribonacciHelper(self, n, sequence):
-    if len(sequence) == n + 1:
-        return sequence[-1]
-    sequence.append(sequence[-3] + sequence[-2] + sequence[-1])
+def tribonacci(n: int) -> int:
+    sequence = [None]*(n+1)
     return self.tribonacciHelper(n, sequence)
+
+def tribonacciHelper(n, sequence):
+    if n == 0:
+            return 0
+    if n == 1 or n == 2:
+            return 1
+    if sequence[n] != None:
+            return sequence[n]
+    sequence[n] = (self.tribonacciHelper(n-1, sequence) + 
+                        self.tribonacciHelper(n-2, sequence) + 
+                        self.tribonacciHelper(n-3, sequence))
+    return sequence[n]
+
+# Solution 2: Bottom up
+# The same solution as above, but implemented with a bottom up approach. Memory
+# is constant since we use a three pointers to the previous values instead of
+# storing all previous tribonacchi numbers.
+
+# Time complexity: O(n)
+# Space complexity: O(1)
+
+def tribonacci(n: int) -> int:
+        prev1 = 0
+        prev2 = 1
+        current = 1
+        if n == 0:
+              return prev1
+        if n == 1 or n == 2:
+              return prev2
+        for i in range(3, n+1):
+             temp = current
+             current = current + prev1 + prev2
+             prev1, prev2 = prev2, temp
+        return current
