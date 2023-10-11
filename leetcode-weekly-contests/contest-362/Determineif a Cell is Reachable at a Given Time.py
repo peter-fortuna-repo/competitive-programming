@@ -1,4 +1,4 @@
-# Link to Problem: https://leetcode.com/contest/weekly-contest-362/problems/determine-if-a-cell-is-reachable-at-a-given-time/
+# Link to problem: https://leetcode.com/contest/weekly-contest-362/problems/determine-if-a-cell-is-reachable-at-a-given-time/
 
 # Solution:
 # While the problem may sound complex, it actually has a very simple solution.
