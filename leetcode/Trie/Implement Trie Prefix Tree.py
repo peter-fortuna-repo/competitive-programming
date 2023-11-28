@@ -1,8 +1,8 @@
 # Link to problem: https://leetcode.com/problems/implement-trie-prefix-tree/
 
 # Solution:
-# This approach uses node with 26 children, each child represents a letter in 
-# the alphabet.
+# This approach uses nodes with 26 children cointained in an array, where each 
+# child represents a letter in the alphabet.
 
 class Trie:
     class Node:
